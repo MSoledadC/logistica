@@ -1,0 +1,10 @@
+.bg-image {
+    margin-bottom: 100px;
+}
+
+.btn-wrapper {
+    position: fixed;
+    right: 20px;
+    bottom: 35px;
+    z-index: 1000;
+}
