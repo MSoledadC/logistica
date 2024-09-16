@@ -1,3 +1,49 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    color: #228AC5; /* Color de los enlaces en su estado normal */
+}
+  
+a:hover {
+    color: #DE1D2A; /* Color de los enlaces cuando pasas el cursor por encima */
+}
+  
+.site-navbar .site-navigation .site-menu .has-children .dropdown {
+    border-top: 2px solid #DE1D2A !important; /* Borde superior rojo */
+    background-color: transparent !important; /* Fondo transparente */
+    box-shadow: none !important; /* Elimina cualquier sombra que pueda estar aplicada */
+}
+/* Navegación principal */
+.site-menu a {
+    color: #fafbfc !important; /* Color principal de los enlaces */
+}
+
+.site-menu a:hover {
+    color: #DE1D2A !important; /* Cambia el color al rojo del logo en hover */
+}
+
+
+/* Enlace de contacto con color específico */
+.site-menu a[href="#contacto"] {
+    color: #DE1D2A;
+}
+
+.site-menu a[href="#contacto"]:hover {
+    color: #228AC5; /* Cambia a azul en hover */
+}
+
+/* Para el menú hamburguesa en móviles */
+.site-menu-toggle {
+    color: #fff; /* Mantiene el color blanco */
+}
+
 .bg-image {
     margin-bottom: 100px;
 }
@@ -7,4 +53,80 @@
     right: 20px;
     bottom: 35px;
     z-index: 1000;
+}
+
+.feature-1 {
+    background-color: #228AC5 !important; /* Cambiado a azul del logo */
+    padding: 30px 50px;
+    color: rgba(255, 255, 255, 0.9); /* Aumentado el contraste del texto */
+    font-size: 15px;
+    border-radius: 10px; /* Añadido un pequeño borde redondeado para mejor diseño */
+    transition: background-color 0.3s ease; /* Transición para efecto hover */
+}
+
+.feature-1:hover {
+    background-color: #DE1D2A; /* Efecto hover cambiando a rojo del logo */
+}
+
+.feature-3 {
+    background: #228AC5 !important;
+}
+
+.feature-3:hover {
+    background-color: #DE1D2A; /* Efecto hover cambiando a rojo del logo */
+}
+
+.icon-dollar {
+    color: #DE1D2A !important;
+}
+
+.icon-phone {
+    color: #DE1D2A !important;
+}
+
+.empezar {
+    background-color: #228AC5;
+    border-color: #228AC5;
+   
+}
+
+.custom-paragraph {
+    color: #000000;
+}
+
+.custom-heading {
+    color: #228AC5;
+}
+
+.custom-label {
+    color: #FFFFFF;
+}
+
+.custom-btn {
+    background-color: #DE1D2A;
+    border-color: #DE1D2A;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.custom-btn:hover {
+    background-color: #b61821;
+    border-color: #b61821;
+}
+
+.textoservicios {
+    color: #228AC5 !important;
+}
+
+.border-primary {
+    border-color: #228AC5 !important;
+}
+
+.border-primary:after {
+    border-color: #228AC5 !important;
+}
+
+.how-it-work-item .number {
+    background: #228AC5 !important
 }
