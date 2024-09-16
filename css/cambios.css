@@ -130,3 +130,31 @@ a:hover {
 .how-it-work-item .number {
     background: #228AC5 !important
 }
+
+/* Estilos generales para el logo */
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1200px) {
+    .logo {
+        max-width: 140px;
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .logo {
+        max-width: 120px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    .logo {
+        max-width: 100px;
+    }
+}
