@@ -1,11 +1,50 @@
+@font-face {
+    font-family: 'Dubai';
+    src: url('fonts/dubai-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dubai';
+    src: url('fonts/dubai-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dubai';
+    src: url('fonts/dubai-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dubai';
+    src: url('fonts/dubai-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Dubai', sans-serif !important;
 }
 
 h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-family: 'Dubai' !important;
+    font-weight: bold; /* Para usar Dubai Bold */
 }
+
+p {
+    font-family: 'Dubai'!important;;
+    font-weight: 300; /* Para usar Dubai Light */
+}
+
+.button {
+    font-family: 'Dubai' !important;;
+    font-weight: 500; /* Para usar Dubai Medium */
+}
+
 
 a {
     color: #228AC5; /* Color de los enlaces en su estado normal */
