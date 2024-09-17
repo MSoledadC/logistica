@@ -32,17 +32,17 @@ body {
 
 h1, h2, h3 {
     font-family: 'Dubai' !important;
-    font-weight: bold; /* Para usar Dubai Bold */
+    font-weight: bold !important; /* Para usar Dubai Bold */
 }
 
 p {
-    font-family: 'Dubai'!important;;
-    font-weight: 300; /* Para usar Dubai Light */
+    font-family: 'Dubai'!important;
+    font-weight: 300 !important; /* Para usar Dubai Light */
 }
 
 .button {
-    font-family: 'Dubai' !important;;
-    font-weight: 500; /* Para usar Dubai Medium */
+    font-family: 'Dubai' !important;
+    font-weight: 500 !important; /* Para usar Dubai Medium */
 }
 
 
