@@ -1281,7 +1281,7 @@ h1, h2, h3, h4, h5,
 .border-primary {
   position: relative; }
   .border-primary h2 {
-    text-transform: uppercase;
+    
     font-weight: 700 !important; }
   .border-primary:after {
     position: absolute;

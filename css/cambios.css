@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Dubai';
-    src: url('fonts/dubai-bold.ttf') format('truetype');
+    src: url('fonts/Dubai-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dubai';
-    src: url('fonts/dubai-regular.ttf') format('truetype');
+    src: url('fonts/Dubai-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dubai';
-    src: url('fonts/dubai-light.ttf') format('truetype');
+    src: url('fonts/Dubai-light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dubai';
-    src: url('fonts/dubai-medium.ttf') format('truetype');
+    src: url('fonts/Dubai-medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -30,7 +30,12 @@ body {
     font-family: 'Dubai', sans-serif !important;
 }
 
-h1, h2, h3 {
+h1 {
+    font-family: 'Dubai' !important;
+    font-weight: bold !important; /* Para usar Dubai Bold */
+}
+
+h2, h3 {
     font-family: 'Dubai' !important;
     font-weight: bold !important; /* Para usar Dubai Bold */
 }

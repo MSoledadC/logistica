@@ -88,8 +88,8 @@
         <div class="row align-items-center justify-content-center text-center">
     
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="text-white font-weight-light mb-5 text-uppercase font-weight-bold">Logística 4D</h1>
-            <p><a href="#" class="btn btn-primary py-3 px-5 empezar">Empezar!</a></p>
+            <h1 class="mb-5">Logística y transporte 4D</h1>
+            <!--<p><a href="#" class="btn btn-primary py-3 px-5 empezar">Empezar!</a></p>-->
           </div>
         </div>
       </div>
@@ -109,19 +109,19 @@
         <div class="col-md-4">
           <div class="free-quote bg-dark h-100">
             <h2 class="my-4 heading text-center custom-heading">Obtenga una cotización gratis</h2>
-            <form method="post">
+            <form action="send_cotizacion.php" method="post">
               <div class="form-group">
-                <label for="fq_name" class="custom-label">Nombre</label>
-                <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Ingrese Nombre">
+                  <label for="fq_name" class="custom-label">Nombre</label>
+                  <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Ingrese Nombre">
               </div>
               <div class="form-group mb-4">
-                <label for="fq_email" class="custom-label">Email</label>
-                <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Ingrese Email">
+                  <label for="fq_email" class="custom-label">Email</label>
+                  <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Ingrese Email">
               </div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary custom-btn text-white py-2 px-4 btn-block" value="Obtener Cotización">
+                  <input type="submit" class="btn btn-primary custom-btn text-white py-2 px-4 btn-block" value="Obtener Cotización">
               </div>
-            </form>
+          </form>
           </div>
         </div>
         <div class="col-md-4">
@@ -137,7 +137,7 @@
     </div>
 
     <div class="btn-wrapper">
-      <a href="https://wa.me/291/?text=%20Hola%20Ni%20transporte%20y%20logistica,%20quisiera%20saber%20sobre:"
+      <a href="https://wa.me/291/?text=%20Hola%20somos%20Logística4D,%20deje%20su%20mensaje, %20será%20respondido%20a%20la%20brevedad."
         target="_blank" class="btn-ws">
         <img src="images/logo_ws.png" alt=" ws" width="70" height="70"/>
       </a>
@@ -439,7 +439,7 @@
       </div>
     </div>  
     
-    <div class="site-section border-bottom">
+   <!--<div class="site-section border-bottom">
       <div class="container">
 
         <div class="row justify-content-center mb-5">
@@ -527,7 +527,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>--> 
     
     <div class="site-section border-top">
       <div class="container">
@@ -596,43 +596,39 @@
         </div>
         <div class="row">
           <div class="col-md-7 mb-5">
-            <form action="#" class="p-5 bg-white">
+            <form action="send_contacto.php" method="post" class="p-5 bg-white">
               <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Nombre</label>
-                  <input type="text" id="fname" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Apellido</label>
-                  <input type="text" id="lname" class="form-control">
-                </div>
+                  <div class="col-md-6 mb-3 mb-md-0">
+                      <label class="text-black" for="fname">Nombre</label>
+                      <input type="text" id="fname" name="fname" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                      <label class="text-black" for="lname">Apellido</label>
+                      <input type="text" id="lname" name="lname" class="form-control">
+                  </div>
               </div>
-    
               <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
-                </div>
+                  <div class="col-md-12">
+                      <label class="text-black" for="email">Email</label> 
+                      <input type="email" id="email" name="email" class="form-control">
+                  </div>
               </div>
-    
               <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">Asunto</label> 
-                  <input type="subject" id="subject" class="form-control">
-                </div>
+                  <div class="col-md-12">
+                      <label class="text-black" for="subject">Asunto</label> 
+                      <input type="subject" id="subject" name="subject" class="form-control">
+                  </div>
               </div>
-    
               <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="message">Mensaje</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Ingrese su consulta..."></textarea>
-                </div>
+                  <div class="col-md-12">
+                      <label class="text-black" for="message">Mensaje</label> 
+                      <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Ingrese su consulta..."></textarea>
+                  </div>
               </div>
-    
               <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Enviar Mensaje" class="btn btn-primary py-3 px-5 empezar">
-                </div>
+                  <div class="col-md-12">
+                      <input type="submit" value="Enviar Mensaje" class="btn btn-primary py-3 px-5 empezar">
+                  </div>
               </div>
             </form>
           </div>
