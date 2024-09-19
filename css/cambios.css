@@ -99,6 +99,20 @@ a:hover {
     z-index: 1000;
 }
 
+/* Carrusel */
+
+.carousel-item {
+    height: 100vh; /* Ocupa toda la altura del viewport */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .feature-1 {
     background-color: #228AC5 !important; /* Cambiado a azul del logo */
     padding: 30px 50px;
@@ -180,6 +194,16 @@ a:hover {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/*contacto*/
+.margin-top-adjust {
+    margin-top: -20px; /* Ajusta según necesites */
+  }
+
+  .bg-custom {
+    background-color: #5ec3fd !important; /* Cambia a un color más claro si lo deseas */
+    color: white !important; /* Ajusta el color del texto si es necesario */
 }
 
 /* Ajustes para pantallas grandes */
