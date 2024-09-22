@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validar que todos los campos estén llenos
     if (!empty($nombre) && !empty($email) && !empty($telefono) && !empty($origen) && !empty($destino) && !empty($detalle)) {
-        $to = "correo_cotizacion@tudominio.com";
+        $to = "cotizaciones@logistica4d.com.ar";
         $subject = "Nueva solicitud de cotización";
         
         // Crear el mensaje con todos los campos
@@ -23,14 +23,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Configurar los encabezados
         $headers = "From: $email";
         
-        // Enviar el correo
-        if (mail($to, $subject, $message, $headers)) {
-            echo "Cotización enviada con éxito.";
+          // Enviar el correo
+          if (mail($to, $subject, $message, $headers)) {
+            echo "Cotización enviada con éxito.<br>";
+            echo "<a href='index.html' class='btn btn-primary'>Volver al inicio</a>"; // Enlace al index
         } else {
-            echo "Hubo un error al enviar la cotización.";
+            echo "Hubo un error al enviar la cotización.<br>";
+            echo "<a href='index.html' class='btn btn-primary'>Volver al inicio</a>"; // Enlace al index en caso de error
         }
     } else {
-        echo "Por favor, complete todos los campos.";
+        echo "Por favor, complete todos los campos.<br>";
+        echo "<a href='index.html' class='btn btn-primary'>Volver al inicio</a>"; // Enlace al index si faltan campos
     }
 }
 ?>
