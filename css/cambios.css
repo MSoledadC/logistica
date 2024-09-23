@@ -102,9 +102,11 @@ a:hover {
 /* Carrusel */
 
 .carousel-item {
-    height: 100vh; /* Ocupa toda la altura del viewport */
-}
-
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Puedes ajustar esto según necesites */
+  }
 .carousel-item img {
     object-fit: cover;
     width: 100%;
@@ -222,5 +224,30 @@ a:hover {
 @media (max-width: 767px) {
     .logo {
         max-width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .empezar {
+        padding: 10px 20px; /* Ajusta el padding para pantallas pequeñas */
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+    .carousel-item {
+        min-height: 400px; /* Ajustar la altura en pantallas pequeñas */
+      }
+      
+      h1 {
+        font-size: 24px; /* Ajustar el tamaño del texto en pantallas pequeñas */
+      }
+
+    .site-blocks-cover h1 {        
+        font-size: 1.8rem;
+    }
+}
+    
+    @media (min-width: 768px) {
+    .empezar {
+        padding: 15px 30px; /* Padding para pantallas medianas en adelante */
+        font-size: 18px; /* Tamaño del texto más grande */
     }
 }
