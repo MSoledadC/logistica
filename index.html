@@ -403,12 +403,12 @@
       </div>
     </div>
 
-    <div class="site-section border-bottom">
+    <div class="site-section border-bottom" >
       <div class="container">
   
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light textoservicios">Testimonios</h2>
+            <h2 class="font-weight-light textoservicios" id="Testimoniales">Testimonios</h2>
           </div>
         </div>
   
@@ -672,10 +672,14 @@
                       <p class="mb-0 font-weight-bold">Email</p>
                       <p class="mb-0"><a href="#">youremail@domain.com</a></p>
                       <p class="mb-0 font-weight-bold">Dirección</p>
-                      <p class="mb-4">Los Ceibos 1622, Roldán, Santa Fe, Argentina</p>
+                      <p class="mb-4">
+                        <a href="https://www.google.com/maps?q=Los+Ceibos+1622,+Rold%C3%A1n,+Santa+Fe,+Argentina" target="_blank">
+                          Los Ceibos 1622, Roldán, Santa Fe, Argentina
+                        </a>
+                      </p>
       
                       <!-- Mapa de Ubicación -->
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13396.55866447572!2d-60.898786!3d-32.920908!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64bcec2c47aff%3A0x7bb354ad3c8fc98b!2sLos%20Ceibos%201622%2C%20Rold%C3%A1n%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1726772388645!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13396.55866447572!2d-60.898786!3d-32.920908!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64bcec2c47aff%3A0x7bb354ad3c8fc98b!2sLos%20Ceibos%201622%2C%20Rold%C3%A1n%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1726772388645!5m2!1ses-419!2sar" width="100%" height="400" style="border: 0; pointer-events: auto; z-index: 1;"" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
       
                   <!-- Únete a Nuestro Equipo -->
@@ -685,7 +689,7 @@
                       <p>Si estás interesado en formar parte de nuestro equipo de colaboradores, contáctanos y te daremos más información.</p>
                       <div class="d-flex justify-content-center">
                         <p>
-                            <a href="#" class="btn btn-primary py-3 px-5 empezar w-100 w-md-auto">SUMATE A NUESTRO EQUIPO</a>
+                            <a href="#" class="btn btn-primary empezar w-100 w-md-auto">SUMATE A NUESTRO EQUIPO</a>
                         </p>
                     </div>
                   </div>
@@ -761,10 +765,10 @@
               <div class="col-md-3">
                 <h2 class="footer-heading mb-4">Enlaces</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">Nosotros</a></li>
-                  <li><a href="#">Servicios</a></li>
-                  <li><a href="#">Testimoniales</a></li>
-                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#nosotros">Nosotros</a></li>
+                  <li><a href="#servicios">Servicios</a></li>
+                  <li><a href="#testimoniales">Testimoniales</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
@@ -777,16 +781,12 @@
                     <li><a href="#masservicios">Almacenamiento</a></li>
                 </ul>
               </div>
-              <div class="col-md-3">
+              <!--<div class="col-md-3">
                 <h2 class="footer-heading mb-4">Features</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">Nosotros</a></li>
-                  <li><a href="#">Servicios</a></li>
-                  <li><a href="#">Testimoniales</a></li>
-                  <li><a href="#">Contacto</a></li>
                 </ul>
-              </div>
-              <div class="col-md-3">
+              </div>-->
+              <div class="col-md-6">
                 <h2 class="footer-heading mb-4">Redes</h2>
                 <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
@@ -801,7 +801,7 @@
               <div class="input-group mb-3">
                 <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Ingrese Email" aria-label="Enter Email" aria-describedby="button-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-primary empezar" type="button" id="button-addon2">Enviar</button>
+                  <button class="btn btn-primary" type="button" id="button-addon2">Enviar</button>
                 </div>
               </div>
             </form>
@@ -810,15 +810,16 @@
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script>  Todos los derechos reservados |  <i class="icon-heart" aria-hidden="true"></i> by <a href="https://taplink.cc/msoledadc" target="_blank">MSoledadC</a>
-            </p>
+              <p>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados |
+                <i class="icon-heart" aria-hidden="true"></i> by <a href="https://taplink.cc/msoledadc" target="_blank">MSoledadC</a>
+                <span class="footer__backtotop" id="back-to-top">
+                  <i class="icon-arrow-up"></i> Volver 
+                </span>
+              </p>
             </div>
           </div>
-          
         </div>
-      </div>
     </footer>
   </div>
 
@@ -834,6 +835,7 @@
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/botonarriba.js"></script>
 
   <!-- Bootstrap JS, jQuery, y Popper.js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

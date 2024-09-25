@@ -113,6 +113,14 @@ a:hover {
     height: 100%;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la transparencia de la capa si lo deseas */
+  }
 
 
 .feature-1 {
@@ -205,6 +213,29 @@ a:hover {
     background-color: #5ec3fd !important; /* Cambia a un color más claro si lo deseas */
     color: white !important; /* Ajusta el color del texto si es necesario */
 }
+/*footer*/
+
+.footer__backtotop {
+    float: right;
+    cursor: pointer;
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    color: #228AC5; /* Color del botón, ajusta según tu esquema de colores */
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Efecto de transición */
+}
+
+.footer__backtotop:hover {
+    color: #DE1D2A; /* Color al pasar el cursor, ajusta según tu esquema */
+}
+
+.footer__backtotop i {
+    margin-left: 10px; /* Ajusta el espacio entre el texto y el icono */
+    font-size: 18px; /* Tamaño del icono */
+}
+
+.footer__backtotop i:hover {
+    color: #DE1D2A; /* Cambia el color del icono al pasar el cursor */
+}
 
 /* Ajustes para pantallas grandes */
 @media (min-width: 1200px) {
@@ -218,6 +249,10 @@ a:hover {
     .logo {
         max-width: 120px;
     }
+    
+    .carousel-item {
+        min-height: 400px; /* Mantener una altura menor en pantallas pequeñas */
+      }
 }
 
 /* Ajustes para pantallas pequeñas */
