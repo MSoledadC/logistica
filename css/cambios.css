@@ -119,7 +119,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la transparencia de la capa si lo deseas */
+    background: rgba(0, 0, 0, 0.5); } /* Ajusta la transparencia de la capa si lo deseas */
   }
 
 
@@ -249,7 +249,7 @@ a:hover {
     .logo {
         max-width: 120px;
     }
-    
+
     .carousel-item {
         min-height: 400px; /* Mantener una altura menor en pantallas pequeñas */
       }

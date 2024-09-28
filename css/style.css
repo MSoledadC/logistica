@@ -209,7 +209,8 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       z-index: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.7); }
+      background: rgba(0, 0, 0, 0.7); 
+      background-size: cover; }
   .bg-image > .container {
     position: relative;
     z-index: 1; }
@@ -298,7 +299,8 @@ h1, h2, h3, h4, h5,
       display: inline-block;
       text-transform: uppercase;
       letter-spacing: .1em;
-      font-size: 14px; }
+      font-size: 14px; 
+      font-weight: bold; }
     .site-navbar .site-navigation .site-menu > li {
       display: inline-block;
       padding: 10px 10px; }
