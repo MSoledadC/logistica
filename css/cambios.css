@@ -254,9 +254,8 @@ a:hover {
         min-height: 400px; /* Mantener una altura menor en pantallas pequeñas */
       }
 
-      .site-blocks-cover {        
+    .site-blocks-cover {        
         height: calc(60vh) !important;
-
     }
 }
 
@@ -288,6 +287,10 @@ a:hover {
 
     .site-blocks-cover h1 {        
         font-size: 1.8rem;
+    }
+
+    .site-blocks-cover {        
+        height: calc(60vh) !important;
     }
 }
     
