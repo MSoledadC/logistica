@@ -255,10 +255,16 @@ a:hover {
       }
 }
 
+
 /* Ajustes para pantallas pequeñas */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .logo {
         max-width: 100px;
+    }
+
+    .site-blocks-cover {        
+        height: calc(80vh) !important;
+
     }
 }
 
