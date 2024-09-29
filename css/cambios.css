@@ -253,6 +253,11 @@ a:hover {
     .carousel-item {
         min-height: 400px; /* Mantener una altura menor en pantallas pequeñas */
       }
+
+      .site-blocks-cover {        
+        height: calc(80vh) !important;
+
+    }
 }
 
 
