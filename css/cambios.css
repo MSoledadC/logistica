@@ -103,14 +103,19 @@ a:hover {
 
 .carousel-item {
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Puedes ajustar esto según necesites */
-  }
-.carousel-item img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    min-height: 100vh; /* Ajustar según necesites */
+    position: relative; /* Asegúrate de que las imágenes se posicionen correctamente */
+}
+
+/* Estilos específicos para cada imagen */
+.carousel-item:nth-child(1) {
+    background-image: url('/images/hero_bg_1.webp');
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url('/images/hero_bg_2.webp');
 }
 
 .overlay {
@@ -119,8 +124,9 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); } /* Ajusta la transparencia de la capa si lo deseas */
-  }
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la transparencia de la capa si lo deseas */
+}
+
 
 
 .feature-1 {
@@ -267,10 +273,18 @@ a:hover {
     }
 
     .site-blocks-cover {        
-        height: calc(80vh) !important;
-
+        height: calc(60vh) !important;
     }
-}
+
+    .empezar {
+        padding: 15px 30px; /* Padding para pantallas medianas en adelante */
+        font-size: 18px; /* Tamaño del texto más grande */
+    }
+
+    .carousel-item {
+        min-height: 400px; /* Ajustar la altura en pantallas pequeñas */
+      }
+    }
 
 @media (max-width: 576px) {
     .empezar {
@@ -294,9 +308,4 @@ a:hover {
     }
 }
     
-    @media (min-width: 768px) {
-    .empezar {
-        padding: 15px 30px; /* Padding para pantallas medianas en adelante */
-        font-size: 18px; /* Tamaño del texto más grande */
-    }
-}
+   
