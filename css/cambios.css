@@ -1,28 +1,28 @@
 @font-face {
     font-family: 'Dubai';
-    src: url('fonts/Dubai-bold.ttf') format('truetype');
+    src: url('../fonts/dubai/Dubai-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dubai';
-    src: url('fonts/Dubai-regular.ttf') format('truetype');
+    src: url('../fonts/dubai/Dubai-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dubai';
-    src: url('fonts/Dubai-light.ttf') format('truetype');
+    src: url('../fonts/dubai/Dubai-Medium.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Dubai';
-    src: url('fonts/Dubai-medium.ttf') format('truetype');
-    font-weight: 500;
+    src: url('../fonts/dubai/Dubai-Light.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -42,7 +42,7 @@ h2, h3 {
 
 p {
     font-family: 'Dubai'!important;
-    font-weight: 300 !important; /* Para usar Dubai Light */
+    font-weight: 100 !important; /* Para usar Dubai Light */
 }
 
 .button {
@@ -111,11 +111,11 @@ a:hover {
 
 /* Estilos específicos para cada imagen */
 .carousel-item:nth-child(1) {
-    background-image: url('/images/hero_bg_1.webp');
+    background-image: url('../images/hero_bg_1.webp');
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url('/images/hero_bg_2.webp');
+    background-image: url('../images/hero_bg_2.webp');
 }
 
 .overlay {
