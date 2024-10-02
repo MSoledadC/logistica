@@ -276,6 +276,10 @@ a:hover {
         height: calc(60vh) !important;
     }
 
+    .offcanvas-menu .site-wrap {
+        position: relative !important;
+    }
+
     .empezar {
         padding: 15px 30px; /* Padding para pantallas medianas en adelante */
         font-size: 18px; /* Tamaño del texto más grande */
