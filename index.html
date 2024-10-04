@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -43,7 +42,7 @@
 
     <!-- Precarga de imágenes del carrusel -->
     <link rel="preload" href="images/hero_bg_1.webp" as="image">
-    <link rel="preload" href="images/hero_bg_2.webp" as="image">
+   <!-- <link rel="preload" href="images/hero_bg_2.webp" as="image">-->
     
   </head>
    
@@ -333,100 +332,98 @@
     <div class="site-section bg-light mb-4 p-4">
       <h2 class="my-4 heading text-center custom-heading">Obtenga una cotización gratis</h2>
       
-      <div class="container">
-          <form action="mail_cotizacion.php" method="post">
-              <div class="row">
-                  <!-- Primera columna -->
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="fq_name" class="mb-0 font-weight-bold">Nombre</label>
-                          <input type="text" class="form-control" id="fq_name" name="fq_name" placeholder="Ingrese Nombre">
-                      </div>
-                      <div class="form-group">
-                          <label for="fq_email" class="mb-0 font-weight-bold">Email</label>
-                          <input type="email" class="form-control" id="fq_email" name="fq_email" placeholder="Ingrese Email">
-                      </div>
-                      <div class="form-group">
-                          <label for="fq_phone" class="mb-0 font-weight-bold">Teléfono</label>
-                          <input type="tel" class="form-control" id="fq_phone" name="fq_phone" placeholder="Ingrese Teléfono">
-                      </div>
-                  </div>
-      
-                  <!-- Segunda columna -->
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="fq_origen" class="mb-0 font-weight-bold">Origen del envío</label>
-                          <input type="text" class="form-control" id="fq_origen" name="fq_origen" placeholder="Ingrese Origen del Envío">
-                      </div>
-                      <div class="form-group">
-                          <label for="fq_destino" class="mb-0 font-weight-bold">Destino del envío</label>
-                          <input type="text" class="form-control" id="fq_destino" name="fq_destino" placeholder="Ingrese Destino del Envío">
-                      </div>
-                      <div class="form-group">
-                          <label for="fq_detalle" class="mb-0 font-weight-bold">Más detalles del envío</label>
-                          <textarea class="form-control" id="fq_detalle" name="fq_detalle" rows="4" placeholder="Ingrese más detalles..."></textarea>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="form-group">
-                  <input type="submit" class="btn btn-primary custom-btn text-white py-2 px-4 btn-block" value="Obtener Cotización">
-              </div>
-          </form>
-      </div>
-  </div>
+        <div class="container">
+            <form action="mail_cotizacion.php" method="post">
+                <div class="row">
+                    <!-- Primera columna -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="fq_name" class="mb-0 font-weight-bold">Nombre</label>
+                            <input type="text" class="form-control" id="fq_name" name="fq_name" placeholder="Ingrese Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="fq_email" class="mb-0 font-weight-bold">Email</label>
+                            <input type="email" class="form-control" id="fq_email" name="fq_email" placeholder="Ingrese Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="fq_phone" class="mb-0 font-weight-bold">Teléfono</label>
+                            <input type="tel" class="form-control" id="fq_phone" name="fq_phone" placeholder="Ingrese Teléfono">
+                        </div>
+                    </div>
+        
+                    <!-- Segunda columna -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="fq_origen" class="mb-0 font-weight-bold">Origen del envío</label>
+                            <input type="text" class="form-control" id="fq_origen" name="fq_origen" placeholder="Ingrese Origen del Envío">
+                        </div>
+                        <div class="form-group">
+                            <label for="fq_destino" class="mb-0 font-weight-bold">Destino del envío</label>
+                            <input type="text" class="form-control" id="fq_destino" name="fq_destino" placeholder="Ingrese Destino del Envío">
+                        </div>
+                        <div class="form-group">
+                            <label for="fq_detalle" class="mb-0 font-weight-bold">Más detalles del envío</label>
+                            <textarea class="form-control" id="fq_detalle" name="fq_detalle" rows="4" placeholder="Ingrese más detalles..."></textarea>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary custom-btn text-white py-2 px-4 btn-block" value="Obtener Cotización">
+                </div>
+            </form>
+        </div>
+    </div>
 
-    <div class="site-section" id="nosotros"></div>
+    <div class="site-section " id="nosotros"> 
       <div class="container">
-        <div class="row mb-5">
-          
+        <div class="row ">
           <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
             <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
           </div>
           <div class="col-md-6 order-md-1" data-aos="fade">
             <div class="text-left pb-1 border-primary mb-4">
-              <h2 class="textoservicios ">Nuestra Historia</h2>
+              <h2 class="textoservicios">Nuestra Historia</h2>
             </div>
-            <p>Logística y Distribución 4D se fundó en 2021 con la misión de ofrecer un servicio de transporte y traslado de mercancías confiable y de alta calidad para grandes empresas, especialmente aquellas ubicadas en parques industriales. Con sede en Rosario, Santa Fe, nuestra empresa se dedica a asegurar que la mercadería de nuestros clientes llegue a su destino en cualquier parte del país, con la máxima eficiencia y cuidado.</p>
+            <p>Logística y Distribución 4D se fundó en 2021 con la misión de ofrecer un servicio de transporte y traslado de mercancías confiable y de alta calidad para grandes empresas, especialmente aquellas ubicadas en parques industriales...</p>
             <p class="mb-5">Nos comprometemos a ser un socio estratégico para las empresas que confían en nosotros para manejar sus necesidades logísticas, brindando soluciones que superan sus expectativas.</p>
-
+    
             <div class="row">
               <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
                 <div class="unit-4">
-                  <div class="unit-4-icon mb-3 mr-4"><span class="textoservicios flaticon-frontal-truck"></span></div>
+                  <div class="unit-4-icon mb-3 mr-4">
+                    <span class="textoservicios flaticon-frontal-truck"></span>
+                  </div>
                   <div>
                     <h3>Envíos, Confía en Cada Movimiento</h3>
                     <p>Transparencia sin igual, sigue tu envío en tiempo real y confía en cada paso del proceso.</p>
-                   <!-- <p class="mb-0"><a href="#">Leer Más</a></p>-->
                   </div>
                 </div>
               </div>
               <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
                 <div class="unit-4">
-                  <div class="unit-4-icon mb-3 mr-4"><span class="textoservicios  flaticon-car"></span></div>
+                  <div class="unit-4-icon mb-3 mr-4">
+                    <span class="textoservicios flaticon-car"></span>
+                  </div>
                   <div>
                     <h3>Transporte con entregas seguras y a Tiempo</h3>
                     <p>Compromiso de puntualidad y seguridad en cada entrega.</p>
-                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
-
-    <div class="site-section border-bottom" >
+    
+    <div class="mb-5 " id="testimoniales"> 
       <div class="container">
-  
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
             <h2 class="font-weight-light textoservicios" id="Testimoniales">Testimonios</h2>
           </div>
         </div>
-  
         <div class="slide-one-item home-slider owl-carousel">
           <div>
             <div class="testimonial">
@@ -435,7 +432,7 @@
                 <p>John Smith</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit...&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -446,11 +443,10 @@
                 <p>Christine Aguilar</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit...&rdquo;</p>
               </blockquote>
             </div>
           </div>
-  
           <div>
             <div class="testimonial">
               <figure class="mb-4">
@@ -458,11 +454,10 @@
                 <p>Robert Spears</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit...&rdquo;</p>
               </blockquote>
             </div>
           </div>
-  
           <div>
             <div class="testimonial">
               <figure class="mb-4">
@@ -470,11 +465,10 @@
                 <p>Bruce Rogers</p>
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit...&rdquo;</p>
               </blockquote>
             </div>
           </div>
-  
         </div>
       </div>
     </div>
@@ -484,7 +478,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
-            <h2 class="font-weight-light textoservicios " data-aos="fade">Cómo funciona</h2>
+            <h2 class="font-weight-light textoservicios mt-5" data-aos="fade">Cómo funciona</h2>
           </div>
         </div>
         <div class="row">
@@ -536,9 +530,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  
   
    <!-- <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
       <div class="container">
@@ -683,7 +674,7 @@
                   <div class="bg-white mb-4 p-4">
                       
                       <p class="mb-0 font-weight-bold">Celular</p>
-                      <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+                      <p class="mb-2"><a href="#">+1 232 3235 324</a></p>
                       <p class="mb-0 font-weight-bold">Email</p>
                       <p class="mb-0"><a href="#">youremail@domain.com</a></p>
                       <p class="mb-0 font-weight-bold">Dirección</p>
@@ -698,8 +689,8 @@
                   </div>
       
                   <!-- Únete a Nuestro Equipo -->
-                  <div class="bg-white p-2">
-                      <h3 class="h5 text-black">¡Únete a nuestro equipo!</h3>
+                  <div class="bg-white mb-4 p-4">
+                      <h3 class="h5 text-black ">¡Únete a nuestro equipo!</h3>
                       <p>En nuestra empresa, siempre buscamos ampliar nuestro equipo con colaboradores comprometidos y profesionales. Si eres fletero o trabajas en logística, ¡esta es tu oportunidad!</p>
                       <p>Si estás interesado en formar parte de nuestro equipo de colaboradores, contáctanos y te daremos más información.</p>
                       <div class="d-flex justify-content-center">
@@ -713,7 +704,7 @@
       </div>
     </div>
 
-    <div class="border-top site-section">
+    <div class="border-top site-section section-padding">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
@@ -722,54 +713,38 @@
           </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 bg-white p-2">
-
+            <div class="col-lg-6 bg-white p-4">
               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4">¿Cuál es el tiempo de entrega para envíos nacionales?</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                  <h3 class="text-black h4 mb-4">¿Cuál es el tiempo de entrega para envíos nacionales?</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-
               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4">¿Cómo puedo hacer el seguimiento de mi pedido?</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                  <h3 class="text-black h4 mb-4">¿Cómo puedo hacer el seguimiento de mi pedido?</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-
               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4">¿Ofrecen servicios de transporte urgente?</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                  <h3 class="text-black h4 mb-4">¿Ofrecen servicios de transporte urgente?</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-
-              <!--<div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4">¿Qué tipos de mercancías transportan?</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>-->
-            </div>
-            <div class="col-lg-6 bg-white p-2"">
-
+          </div>
+          <div class="col-lg-6 bg-white p-4">
               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4">¿Cómo calculan las tarifas de transporte?</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                  <h3 class="text-black h4 mb-4">¿Cómo calculan las tarifas de transporte?</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-
               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4">¿Qué tipos de mercancías transportan?</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                  <h3 class="text-black h4 mb-4">¿Qué tipos de mercancías transportan?</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-
               <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4">Dolorum esse odio quas architecto sint?</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  <h3 class="text-black h4 mb-4">Dolorum esse odio quas architecto sint?</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-
-              <!--<div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-black h4 mb-4">Dolorum esse odio quas architecto sint?</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>-->
-            </div>
           </div>
         </div>
     </div>
   </div>
+</div>
     
     <!-- Contact End -->
     
@@ -836,21 +811,21 @@
     </footer>
   </div>
 
- <!-- Scripts -->
- <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" defer></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
- 
- <script src="js/jquery-migrate-3.0.1.min.js" defer></script>
- <script src="js/jquery-ui.js" defer></script>
- <script src="js/owl.carousel.min.js" defer></script>
- <script src="js/jquery.stellar.min.js" defer></script>
- <script src="js/jquery.countdown.min.js" defer></script>
- <script src="js/jquery.magnific-popup.min.js" defer></script>
- <script src="js/bootstrap-datepicker.min.js" defer></script>
- <script src="js/aos.js" defer></script>
- <script src="js/main.js" defer></script>
- <script src="js/botonarriba.js" defer></script>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+
+<script src="js/jquery-migrate-3.0.1.min.js" defer></script>
+<script src="js/jquery-ui.js" defer></script>
+<script src="js/owl.carousel.min.js" defer></script>
+<script src="js/jquery.stellar.min.js" defer></script>
+<script src="js/jquery.countdown.min.js" defer></script>
+<script src="js/jquery.magnific-popup.min.js" defer></script>
+<script src="js/bootstrap-datepicker.min.js" defer></script>
+<script src="js/aos.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/botonarriba.js" defer></script>
         
   </body>
 </html>

@@ -79,9 +79,10 @@ h1, h2, h3, h4, h5,
       color: #000;
       background-color: #fff; }
   .btn.btn-primary {
-    border: 2px solid transparent; }
+    border: 2px solid transparent;
+    border-radius: 10px;}
     .btn.btn-primary:hover {
-      border: 2px solid #000;
+      border: 2px solid #228AC5;
       background: none !important;
       color: #000 !important; }
 
@@ -136,7 +137,7 @@ h1, h2, h3, h4, h5,
     background: #f89d13; }
 
 .border-top {
-  border-top: 1px solid #edf0f5 !important; }
+  border-top: 1px solid #edf0f5 !important;}
 
 .site-footer {
   padding: 4em 0;

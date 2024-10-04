@@ -105,7 +105,9 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Ajustar según necesites */
+    min-height: 100vh; 
+    max-width: 100%;
+    max-height: 100%;/* Ajustar según necesites */
     position: relative; /* Asegúrate de que las imágenes se posicionen correctamente */
 }
 
@@ -219,6 +221,14 @@ a:hover {
     background-color: #5ec3fd !important; /* Cambia a un color más claro si lo deseas */
     color: white !important; /* Ajusta el color del texto si es necesario */
 }
+
+.section-padding {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+  }
+
+
 /*footer*/
 
 .footer__backtotop {
