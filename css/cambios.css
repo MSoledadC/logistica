@@ -50,6 +50,10 @@ p {
     font-weight: 500 !important; /* Para usar Dubai Medium */
 }
 
+.h2 {
+    font-size: 3rem;
+}
+
 
 a {
     color: #228AC5; /* Color de los enlaces en su estado normal */
@@ -95,7 +99,7 @@ a:hover {
 .btn-wrapper {
     position: fixed;
     right: 20px;
-    bottom: 35px;
+    bottom: 100px;
     z-index: 1000;
 }
 
@@ -273,11 +277,7 @@ a:hover {
     .site-blocks-cover {        
         height: calc(60vh) !important;
     }
-}
 
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
     .logo {
         max-width: 100px;
     }
@@ -298,7 +298,13 @@ a:hover {
     .carousel-item {
         min-height: 400px; /* Ajustar la altura en pantallas pequeñas */
       }
-    }
+
+      .btn-wrapper {
+        bottom: 100px;
+       }
+}
+
+
 
 @media (max-width: 576px) {
     .empezar {
@@ -320,6 +326,10 @@ a:hover {
     .site-blocks-cover {        
         height: calc(60vh) !important;
     }
+
+    .btn-wrapper {
+        bottom: 127px;
+       }
 }
     
    
