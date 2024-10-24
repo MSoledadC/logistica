@@ -62,12 +62,57 @@ a {
 a:hover {
     color: #DE1D2A; /* Color de los enlaces cuando pasas el cursor por encima */
 }
-  
-.site-navbar .site-navigation .site-menu .has-children .dropdown {
-    border-top: 2px solid #DE1D2A !important; /* Borde superior rojo */
-    background-color: transparent !important; /* Fondo transparente */
-    box-shadow: none !important; /* Elimina cualquier sombra que pueda estar aplicada */
+
+/* Estilo para el navbar inicialmente */
+.site-navbar {
+    position: fixed !important; /* Fijar el navbar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Fondo transparente inicialmente */
+    transition: background-color 0.3s ease, padding 0.3s ease, height 0.3s ease; /* Transición suave al hacer scroll */
+    padding: 20px 0; /* Espaciado inicial */
 }
+
+/* Navbar cuando se hace scroll */
+.site-navbar.scrolled {
+    background-color: rgb(204, 204, 204) !important; /* Color del fondo al hacer scroll */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añadir sombra para mayor efecto */
+    padding: 10px 0; /* Reduce el padding al hacer scroll */
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
+
+/* Estilos generales para el logo */
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: width 0.3s ease, max-width 0.3s ease; /* Transición suave */
+    width: 200px; /* Tamaño base del logo */
+}
+
+/* Logo cuando se hace scroll */
+.site-navbar.scrolled .logo {
+    width: 100px; /* Tamaño reducido del logo al hacer scroll */
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Estilo original del dropdown */
+.site-navbar .site-navigation .site-menu .has-children .dropdown {
+    border-top: 2px solid #DE1D2A !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Dropdown cuando el navbar tiene la clase 'scrolled' */
+.site-navbar.scrolled .site-navigation .site-menu .has-children .dropdown {
+    background-color: rgb(204, 204, 204) !important; /* Fondo cuando el navbar está scrolleado */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important; /* Sombra */
+}
+
+
 /* Navegación principal */
 .site-menu a {
     color: #fafbfc !important; /* Color principal de los enlaces */
@@ -211,12 +256,6 @@ a:hover {
     background: #228AC5 !important
 }
 
-/* Estilos generales para el logo */
-.logo {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 /*contacto*/
 
