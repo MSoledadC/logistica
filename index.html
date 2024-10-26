@@ -21,7 +21,7 @@
 
     <!-- SEO -->
     <meta name="description" content="Empresa de logística y transporte 4D, ofrecemos soluciones rápidas y eficientes para tus necesidades de transporte. Contáctanos para cotizaciones rápidas y seguras.">
-    <meta name="keywords" content="logística, transporte, transporte de carga, soluciones logísticas, transporte 4D, fletes, transporte eficiente, transporte rápido">
+    <meta name="keywords" content="transporte y logística en Argetnina, soluciones integrales de transporte, servicio de logística confiable, logística en parques industriales">
     <meta name="author" content="MSoledadC" />
 
     <!-- REDES -->
@@ -109,6 +109,7 @@
                   <div class="row align-items-center justify-content-center text-center h-100">
                       <div class="col-md-8">
                           <h1 class="mb-5 text-white">Logística y transporte 4D</h1>
+                          <p><a href="#contacto" class="btn btn-primary py-3 px-5 text-white">Contactanos / Conoce de nosotros!</a></p>
                       </div>
                   </div>
               </div>
@@ -150,7 +151,7 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
             <h2 class="mb-0 textoservicios">Lo que ofrecemos</h2>
-            <p class="color-black-opacity-1">Soluciones de transporte industrial y optimización de cargas para entregas seguras, eficientes y rentables.</p>
+            <p class="color-black-opacity-1">Ofrecemos soluciones integrales en transporte y logística en Argentina, adaptadas a las necesidades de empresas de todos los tamaños.</p>
           </div>
         </div>
         <div class="row align-items-stretch">
@@ -159,7 +160,8 @@
               <div class="unit-4-icon mr-4"><span class="textoservicios flaticon-car"></span></div>
               <div>
                 <h3>Transporte de Mercadería Industrial</h3>
-                <p>Servicios especializados en el traslado seguro y eficiente de productos para las industrias metalúrgica y sectores industriales. Nuestra experiencia y equipos avanzados aseguran el manejo adecuado de cargas complejas y voluminosas, brindando un servicio adaptado a las necesidades de grandes empresas.</p>
+                <p class="textos">Ofrecemos servicios especializados de <strong>transporte industrial en Argentina,</strong> asegurando el <strong>traslado eficiente y seguro de cargas industirales</strong> para sectores como la metalurgia, siderurgia, manufactura y otros secotres productivos. Con un equipo profesional y equipamiento avanzado, manejamos <stong>cargas  pesadas y voluminosas</stong> sin comprometer la  seguridad ni los tiempos de entrega.<br>
+                Adaptamos nuestros servicios a las necesidades específicas de <strong>grandes empresas industriales</strong>a las necesidades de grandes empresas.</p>
                 <!--<p class="mb-0"><a href="#">Leer Más</a></p>-->
               </div>
             </div>
@@ -168,8 +170,8 @@
             <div class="unit-4 d-flex">
               <div class="unit-4-icon mr-4"><span class="textoservicios flaticon-car"></span></div>
               <div>
-                <h3>Distribución Nacional</h3>
-                <p>Cobertura integral a nivel nacional con un enfoque estratégico en la optimización de rutas. Garantizamos entregas rápidas y confiables, minimizando tiempos de tránsito y maximizando la eficiencia para que tu carga llegue a destino sin contratiempos.</p>
+                <h3 style="margin-bottom: 30px;">Distribución Nacional</h3>
+                <p class="textos">Cobertura integral a nivel nacional con un enfoque estratégico en la optimización de rutas. Garantizamos entregas rápidas y confiables, minimizando tiempos de tránsito y maximizando la eficiencia para que tu carga llegue a destino sin contratiempos.</p>
                 
               </div>
             </div>
@@ -178,8 +180,8 @@
             <div class="unit-4 d-flex">
               <div class="unit-4-icon mr-4"><span class="textoservicios flaticon-frontal-truck"></span></div>
               <div>
-                <h3>Optimización de Cargas</h3>
-                <p>Servicios diseñados para maximizar la eficiencia del transporte con cargas de ida y vuelta, reduciendo costos operativos y mejorando la sostenibilidad. Aprovechamos cada trayecto para optimizar el uso de recursos y ofrecerte un servicio rentable y competitivo.</p>
+                <h3 style="margin-bottom: 30px;">Optimización de Cargas</h3>
+                <p class="textos">Servicios diseñados para maximizar la eficiencia del transporte con cargas de ida y vuelta, reduciendo costos operativos y mejorando la sostenibilidad. Aprovechamos cada trayecto para optimizar el uso de recursos y ofrecerte un servicio rentable y competitivo.</p>
                 
               </div>
             </div>
@@ -321,7 +323,7 @@
     <div class="site-section bg-light mb-4 p-4">
       <h2 class="my-4 heading text-center custom-heading">Obtenga una cotización gratis</h2>
       
-        <div class="container">
+        <div class="container" id="cotizacion">
             <form action="mail_cotizacion.php" method="post">
                 <div class="row">
                     <!-- Primera columna -->
@@ -329,6 +331,10 @@
                         <div class="form-group">
                             <label for="fq_name" class="mb-0 font-weight-bold">Nombre</label>
                             <input type="text" class="form-control" id="fq_name" name="fq_name" placeholder="Ingrese Nombre">
+                        </div>
+                        <div class="form-group">
+                          <label for="fq_empresa" class="mb-0 font-weight-bold">Empresa</label>
+                          <input type="text" class="form-control" id="fq_empresa" name="fq_empresa" placeholder="Ingrese Empresa">
                         </div>
                         <div class="form-group">
                             <label for="fq_email" class="mb-0 font-weight-bold">Email</label>
@@ -352,7 +358,7 @@
                         </div>
                         <div class="form-group">
                             <label for="fq_detalle" class="mb-0 font-weight-bold">Más detalles del envío</label>
-                            <textarea class="form-control" id="fq_detalle" name="fq_detalle" rows="4" placeholder="Ingrese más detalles..."></textarea>
+                            <textarea class="form-control" id="fq_detalle" name="fq_detalle" rows="5" placeholder="Ingrese más detalles..."></textarea>
                         </div>
                     </div>
                 </div>
@@ -374,8 +380,8 @@
             <div class="text-left pb-1 border-primary mb-4">
               <h2 class="textoservicios">Nuestra Historia</h2>
             </div>
-            <p>Logística y Distribución 4D se fundó en 2021 con la misión de ofrecer un servicio de transporte y traslado de mercancías confiable y de alta calidad para grandes empresas, especialmente aquellas ubicadas en parques industriales...</p>
-            <p class="mb-5">Nos comprometemos a ser un socio estratégico para las empresas que confían en nosotros para manejar sus necesidades logísticas, brindando soluciones que superan sus expectativas.</p>
+            <p class="textos">Con más de 3 años de experiencia en el sector, en Logística y Distribución 4D nos hemos consolidado como un referente en el transoprte y la logística en Argentina. Nestra misión es ofrecer un servicio de excelencia que respalde el crecimiento de nuestros clientes. Sabemos que cada empresa tiene necesidades especificas, y por eso brindamos <strong>soluciones logísticas personalizadas,</strong> garantizando un transporte confiable y seguro. </p>
+            <p class="mb-5">Nos comprometemos a ser un socio estratégico para las empresas que confían en nosotros para manejar sus necesidades logísticas.</p>
     
             <div class="row">
               <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
@@ -421,7 +427,8 @@
                <!--<p>John Smith</p>--> 
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit...&rdquo;</p>
+                <p>&ldquo;Cuando trabajamos con 4D, nuestras entregas de insumos y productos terminados han sido siempre puntuales y sin contratiempos. Son un socio clave en nuestra cadena de suministro.<br>
+                Son una empresa de logistica eficiente...&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -432,7 +439,8 @@
                <!-- <p>Christine Aguilar</p>--> 
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit...&rdquo;</p>
+                <p>&ldquo;El servicio personalizado que recibimos de 4D fue muy bueno. Siempre están disponibles para resolver cualquier problema y se adaptan a nuestras necesidades cambiantes.<br>
+                Gracias a su flexibilidad, pudimos mejorar nuestra logística interna...&rdquo;</p>
               </blockquote>
             </div>
           </div>
@@ -443,21 +451,22 @@
                <!-- <p>Robert Spears</p>--> 
               </figure>
               <blockquote>
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit...&rdquo;</p>
+                <p>&ldquo;La cobertura nacional que ofrecen junto con su sistema de optimización de cargas, nos permitio gestionar nuestros envíos de forma más eficiente. Hemos visto una reducción significativa en los costos operativos y una mayor sostenibilidad en nuetsras operaciones logísticas.
+                Recomiendo su servicio ...&rdquo;</p>
               </blockquote>
             </div>
           </div>
-          <div>
-            <div class="testimonial">
+          <!--<div>
+             <div class="testimonial">
               <figure class="mb-4">
                 <img src="images/logosinfondo.png" alt="Image" class="img-fluid mb-3">
-               <!-- <p>Bruce Rogers</p>-->
+               <p>Bruce Rogers</p>
               </figure>
               <blockquote>
                 <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit...&rdquo;</p>
               </blockquote>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -491,11 +500,11 @@
               <span class="number">2</span>
               <div class="how-it-work-body">
                 <h2>Cotización personalizada</h2>
-                <p class="mb-5">El equipo analiza la carga y ruta para ofrecer una cotización personalizada.</p>
+                <p class="mb-5">El equipo analiza la carga y ruta para ofrecer una cotización ajustada a sus necesidades.</p>
                 <ul class="ul-check list-unstyled white">
-                  <li class="text-white">Soluciones logísticas personalizadas.</li>
-                  <li class="text-white">Entrega y feedback, para mejorar el servicio.</li>              
-                  <li class="text-white">Servicio de confianza, entrega puntual y segura.</li>
+                  <li class="text-white">Soluciones logísticas personalizadas, diseñadas según los requerimientos de cada cliente.</li>
+                  <li class="text-white">Entrega segura y feedback constante.</li>              
+                  <li class="text-white">Servicio de confianza, garantiza entrega en tiempo y forma.</li>
                 </ul>
               </div>
             </div>
@@ -509,8 +518,8 @@
                 <p class="mb-5">Se agenda la recolección de la mercadería y se coordina la ruta más eficiente.</p>
                 <ul class="ul-check list-unstyled white">
                   <li class="text-white">Amplia cobertura geográfica, saliendo desde Rosario hacia cualquier punto del país.</li>
-                  <li class="text-white">Seguimiento de carga</li>
-                  <!--<li class="text-white">Voluptas unde sit pariatur earum</li>-->
+                  <li class="text-white">Seguimiento de carga.</li>
+                  <li class="text-white">Maximización de recursos, asegurando un servicio rentable y eficaz.</li>
                 </ul>
               </div>
             </div>
@@ -611,6 +620,7 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center border-primary">
             <h2 class="font-weight-light textoservicios">Contacto</h2>
+            <p class="color-black-opacity-1">¿Necesitás un servicio de transporte y logística confiable para tu empresa? Contactanos para una cotización personalizada y optimicemos juntos tus procesos logísticos. Nos comprometemos a brindarte la mejor experiencia en logística y distribución en Argentina.</p>
           </div>
         </div>
         
@@ -679,9 +689,9 @@
       
                   <!-- Únete a Nuestro Equipo -->
                   <div class="bg-white mb-4 p-4">
-                      <h3 class="h5 text-black ">¡Únete a nuestro equipo!</h3>
-                      <p>En nuestra empresa, siempre buscamos ampliar nuestro equipo con colaboradores comprometidos y profesionales. Si eres fletero o trabajas en logística, ¡esta es tu oportunidad!</p>
-                      <p>Si estás interesado en formar parte de nuestro equipo de colaboradores, contáctanos y te daremos más información.</p>
+                      <h3 class="h5 text-black ">¡Se parte de nuestro equipo!</h3>
+                      <p>En 4D Logística, siempre estamos en busca de ampliar nuestro equipo con colaboradores comprometidos y profesionales. Si sos fletero o trabajas en logística y transporte, ¡esta es tu oportunidad para sumarte a una empresa en crecimiento!</p>
+                      <p>¿Interesado en formar parte de nuestro equipo? Contactanos y descubrí cómo podes contribuir a llevar nuestros servicios al siguiente nivel.</p>
                       <div class="d-flex justify-content-center">
                         <p>
                             <a href="#" class="btn btn-primary py-3 px-5 empezar">SUMATE A NUESTRO EQUIPO</a>

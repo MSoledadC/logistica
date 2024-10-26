@@ -150,6 +150,12 @@ a:hover {
     z-index: 1000;
 }
 
+.textos {
+    text-align: justify;
+    line-height: 1.6; 
+    word-spacing: 0.5px;
+}
+
 /* Carrusel */
 
 .carousel-item {
