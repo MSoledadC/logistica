@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <body>
                     <div class="container text-center mt-5">
                         <p class="text-danger">Por favor, complete todos los campos.</p>
-                        <a href="index.html" class="btn btn-primary py-3 px-5 empezar">Volver al inicio</a>
+                        <a href="index.html#contacto" class="btn btn-primary py-3 px-5 empezar">Volver al inicio</a>
                     </div>
                 </body>
                 </html>';
