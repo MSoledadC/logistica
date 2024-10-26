@@ -51,7 +51,7 @@ p {
 }
 
 .h2 {
-    font-size: 3rem;
+    font-size: 3rem; 
 }
 
 
@@ -304,6 +304,9 @@ a:hover {
     color: #DE1D2A; /* Cambia el color del icono al pasar el cursor */
 }
 
+
+
+
 /* Ajustes para pantallas grandes */
 @media (min-width: 1200px) {
     .logo {
@@ -312,7 +315,7 @@ a:hover {
 }
 
 /* Ajustes para pantallas medianas */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 766px) and (max-width: 1199px) {
     .logo {
         max-width: 120px;
     }
@@ -325,46 +328,67 @@ a:hover {
         height: calc(60vh) !important;
     }
 
-    .logo {
-        max-width: 100px;
+    .site-blocks-cover h1 {        
+        font-size: 2.6rem !important;
     }
 
-    .site-blocks-cover {        
-        height: calc(60vh) !important;
+    .h2 {
+        font-size: 2.5rem; /* Ajustar el tamaño del texto en pantallas medianas */
+    }
+
+    .logo {
+        max-width: 100px;
     }
 
     .offcanvas-menu .site-wrap {
         position: relative !important;
     }
 
+    .carousel-control-prev {
+        bottom: 200px !important;
+    }
+    
+    .carousel-control-next {
+        bottom: 200px !important;
+    }
+
     .empezar {
-        padding: 15px 30px; /* Padding para pantallas medianas en adelante */
-        font-size: 18px; /* Tamaño del texto más grande */
+        padding: 10px 20px !important; /* Ajuste de padding para pantallas pequeñas */
+        font-size: 16px !important; /* Tamaño del texto más pequeño */
     }
 
     .carousel-item {
         min-height: 400px; /* Ajustar la altura en pantallas pequeñas */
-      }
+    }
 
-      .btn-wrapper {
+    .btn-wrapper {
         bottom: 100px;
-       }
+    }
+
+    .slide-one-item.home-slider .owl-nav {
+        top: 30% !important;
+    }
 }
 
 
 
 @media (max-width: 576px) {
-    .empezar {
-        padding: 10px 20px; /* Ajusta el padding para pantallas pequeñas */
-        font-size: 16px; /* Ajusta el tamaño del texto */
-    }
+    
     .carousel-item {
         min-height: 400px; /* Ajustar la altura en pantallas pequeñas */
-      }
+    }
       
-      h1 {
+    h1 {
         font-size: 24px; /* Ajustar el tamaño del texto en pantallas pequeñas */
-      }
+    }
+
+    .h2 {
+        font-size: 2rem; /* Ajustar el tamaño del texto en pantallas medianas */
+    }
+
+    .logo {
+        max-width: 100px;
+    }
 
     .site-blocks-cover h1 {        
         font-size: 1.8rem;
@@ -376,7 +400,24 @@ a:hover {
 
     .btn-wrapper {
         bottom: 127px;
-       }
+    }
+
+    .empezar {
+        padding: 8px 16px !important; /* Padding más pequeño */
+        font-size: 14px !important; /* Tamaño del texto más pequeño */
+    }
+
+    .carousel-control-prev {
+        bottom: 250px !important;
+    }
+    
+    .carousel-control-next {
+        bottom: 250px !important;
+    }
+
+    .owl-nav {
+        display: none;
+    }
 }
     
    
