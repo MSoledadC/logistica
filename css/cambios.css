@@ -220,8 +220,7 @@ a:hover {
 .empezar {
     background-color: #228AC5;
     border-color: #228AC5;
-   
-}
+} 
 
 .custom-paragraph {
     color: #000000;
@@ -268,7 +267,7 @@ a:hover {
 /*contacto*/
 
 
-  .bg-custom {
+.bg-custom {
     background-color: #5ec3fd !important; /* Cambia a un color más claro si lo deseas */
     color: white !important; /* Ajusta el color del texto si es necesario */
 }
@@ -277,7 +276,12 @@ a:hover {
     padding-top: 60px;
     padding-bottom: 40px;
     margin-top: 40px;
-  }
+}
+
+.g-recaptcha {
+    display: inline-block; /* Esto ayuda a centrarlo mejor */
+    margin: 0 auto; /* Centra el elemento */
+}
 
 
 /*footer*/
@@ -322,7 +326,7 @@ a:hover {
 
     .carousel-item {
         min-height: 400px; /* Mantener una altura menor en pantallas pequeñas */
-      }
+    }
 
     .site-blocks-cover {        
         height: calc(60vh) !important;
