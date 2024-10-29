@@ -2,17 +2,18 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email']; // Recibe el email del formulario
 
-    // Validar que el campo de email no esté vacío
-    if (!empty($email)) {
+    // Validar que el campo de email no esté vacío y sea un email válido
+    if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $to = "consultas@logistica4d.com.ar"; // Dirección de destino
         $subject = "Nuevo contacto desde el sitio web";
 
         // Crear el mensaje
         $message = "Se ha recibido un nuevo contacto desde el sitio web.\n\n";
-        $message .= "Email: $email\n";
+        $message .= "Email: " . htmlspecialchars($email) . "\n";
 
         // Encabezados para el correo
-        $headers = "From: no-reply@logistica4d.com.ar\r\n"; // Remitente del correo
+        $headers = "From: no-reply@logistica4d.com.ar\r\n";
+        $headers .= "Reply-To: $email\r\n"; // Para que las respuestas vayan al remitente
 
         // Iniciar salida HTML
         echo '<!DOCTYPE html>
@@ -53,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Cerrar el HTML aquí
         echo '</body></html>';
     } else {
-        // Si falta el campo de email, devolver error
+        // Si falta el campo de email o es inválido, devolver error
         echo '<!DOCTYPE html>
               <html lang="es">
               <head>

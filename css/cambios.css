@@ -387,7 +387,7 @@ a:hover {
     }
 
     .h2 {
-        font-size: 2rem; /* Ajustar el tamaño del texto en pantallas medianas */
+        font-size: 1.8rem !important; /* Ajustar el tamaño del texto en pantallas medianas */
     }
 
     .logo {
@@ -395,7 +395,7 @@ a:hover {
     }
 
     .site-blocks-cover h1 {        
-        font-size: 1.8rem;
+        font-size: 1.8rem !important;
     }
 
     .site-blocks-cover {        
@@ -412,11 +412,11 @@ a:hover {
     }
 
     .carousel-control-prev {
-        bottom: 250px !important;
+        display: none !important;
     }
     
     .carousel-control-next {
-        bottom: 250px !important;
+        display: none !important;
     }
 
     .owl-nav {
