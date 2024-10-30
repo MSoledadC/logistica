@@ -704,12 +704,19 @@
     
           <!-- Únete a Nuestro Equipo -->
           <div class="bg-white mb-4 p-4 flex-grow-1">
-            <h3 class="h5 text-black">¡Sé parte de nuestro equipo!</h3>
+            <h3 class="mb-3 h5 text-black">¡Sé parte de nuestro equipo!</h3>
             <p>En 4D Logística, siempre estamos en busca de ampliar nuestro equipo con colaboradores comprometidos y profesionales. Si sos fletero o trabajas en logística y transporte, ¡esta es tu oportunidad para sumarte a una empresa en crecimiento!</p>
             <p>¿Interesado en formar parte de nuestro equipo? Contáctanos y descubrí cómo podés contribuir a llevar nuestros servicios al siguiente nivel.</p>
-            <div class="d-flex justify-content-center">
+            <div class="mt-5 d-flex justify-content-center">
               <p>
-                <a href="#" class="btn btn-primary py-3 px-5 empezar">SUMATE A NUESTRO EQUIPO</a>
+                <form action="mail_contacto.php" method="post"> 
+                  <div class="input-group mb-3">
+                    <input type="email" name="email" class="form-control border-secondary text-white bg-transparent" placeholder="Ingrese Email" aria-label="Ingrese Email" aria-describedby="button-addon2" required>
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="submit" id="button-addon2">SUMATE A NUESTRO EQUIPO</button>
+                    </div>
+                  </div>
+                </form>
               </p>
             </div>
           </div>
